@@ -1,0 +1,456 @@
+/*fonts*/
+@font-face {
+  font-family: 'neon_80sregular';
+  src: url('neon-webfont.woff2') format('woff2'),
+    url('neon-webfont.woff') format('woff');
+  font-family: 'streamster';
+  src: url('Streamster.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.japanese {
+  font-family: 'Noto Sans JP', sans-serif;
+  max-width: 800px;
+}
+
+/*animations*/
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes letter-flicker {
+  0% {
+    opacity: 0.1;
+    text-shadow: 0px 0px 29px rgba(229, 88, 244, 1);
+    ;
+  }
+
+  2% {
+    opacity: 0.1;
+    text-shadow: 0px 0px 29px rgba(229, 88, 244, 1);
+    ;
+  }
+
+  4% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px rgba(229, 88, 244, 1);
+    ;
+  }
+
+  19% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px rgba(229, 88, 244, 1);
+    ;
+  }
+
+  21% {
+    opacity: 0.1;
+    text-shadow: 0px 0px 29px rgba(229, 88, 244, 1);
+    ;
+  }
+
+  23% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px rgba(229, 88, 244, 1);
+    ;
+  }
+
+  80% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px rgba(229, 88, 244, 1);
+    ;
+  }
+
+  83% {
+    opacity: 0.4;
+    text-shadow: 0px 0px 29px rgba(229, 88, 244, 1);
+    ;
+  }
+
+  87% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px rgba(229, 88, 244, 1);
+    ;
+  }
+}
+
+@-webkit-keyframes pulsate {
+  0% {
+    -webkit-transform: scale(0.1, 0.1);
+    opacity: 0.0;
+  }
+
+  50% {
+    opacity: 1.0;
+  }
+
+  100% {
+    -webkit-transform: scale(1.2, 1.2);
+    opacity: 0.0;
+  }
+}
+
+@keyframes lds-blocks {
+  0% {
+    background: #e558f4;
+  }
+
+  12.5% {
+    background: #e558f4;
+  }
+
+  12.625% {
+    background: #efefef;
+  }
+
+  100% {
+    background: #efefef;
+  }
+}
+
+@-webkit-keyframes lds-blocks {
+  0% {
+    background: #e558f4;
+  }
+
+  12.5% {
+    background: #e558f4;
+  }
+
+  12.625% {
+    background: #efefef;
+  }
+
+  100% {
+    background: #efefef;
+  }
+}
+
+/*general*/
+html, body {
+  scroll-behavior: smooth;
+  margin: 0 0 0 0 !important;
+  padding: 0 0 0 0 !important;
+  background: #640064;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: streamster;
+  color: #e558f4;
+  font-size: 120px;
+  text-shadow: 0px 0px 5px #E69EEE;
+  user-select: none;
+  animation: letter-flicker 3s linear infinite;
+}
+
+h4 {
+  color: #e558f4;
+  font-size: 40px;
+  text-shadow: 0px 0px 5px #E69EEE;
+  margin-bottom: -5.75vh;
+  margin-right: 525px;
+  user-select: none;
+  animation: letter-flicker 3s linear infinite;
+}
+
+h2 {
+  font-size: 27px;
+  margin-top: 10vh;
+  padding-bottom: 1vh;
+  text-shadow: 3px 3px 5px black;
+  text-align: center;
+}
+
+.slide {
+  height: 5vh;
+  width: 100vw;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+.indent {
+  text-indent: 5vw;
+}
+
+.h2-fullexhibit {
+  padding-bottom: 0;
+}
+
+/*pre-loader*/
+.preload {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  z-index: 9;
+  filter: opacity(85%);
+}
+
+.loadinganimation {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  width: 25vw
+}
+
+.loadingblocks div {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #efefef;
+  -webkit-animation: lds-blocks 2.2s linear infinite;
+  animation: lds-blocks 2.2s linear infinite;
+}
+
+.loadingtext {
+  margin-left: 1em;
+}
+
+/*landing-page*/
+#intro-bg {
+  height: 100vh;
+  filter: brightness(48%);
+}
+
+#intro {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -71vh;
+  text-align: center;
+  animation: fadein 3s;
+  width: 900px;
+}
+
+#intro-slide {
+  position: absolute;
+  margin-top: -10vh;
+  font-size: 30px;
+  width: 98vw;
+  text-align: center;
+  animation: fadein 5s;
+}
+
+#intro-slide a {
+  color: white;
+  text-decoration: none;
+  text-shadow: 3px 3px 5px black;
+}
+
+#vbg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+/*exhibit-breaks*/
+.break {
+  height: 100vh;
+}
+
+.breakcontent {
+  font-size: 20px;
+  height: 40vh;
+  width: 85vw;
+  color: #DCDCDC;
+  margin-right: 7.5vw;
+  margin-left: 7.5vw;
+  text-indent: 5vw;
+}
+
+.breakfill {
+  height: 30vh;
+}
+
+.breakfillsmall {
+  height: 10vh;
+}
+
+/*inbetween-areas*/
+.spacer {
+  height: 100vh;
+}
+
+.lead-line {
+  height: 90%;
+  border-left: 1px solid #7e197e;
+  margin-left: 50%;
+  margin-bottom: 5vh;
+  margin-top: 5vh;
+}
+
+/*exhibit-components*/
+.single-exhibit {
+  width: 99vw;
+}
+
+.single-container {
+  padding-top: 6vh;
+  height: 61vh;
+  width: 99vw;
+}
+
+.onepointfive-container {
+  padding-top: 5vh;
+  height: 105vh;
+}
+
+.small-left {
+  float: left;
+  height: 75%;
+  width: 35%;
+  margin-left: 5%;
+}
+
+.small-right {
+  float: right;
+  height: 75%;
+  width: 35%;
+  margin-right: 5%;
+}
+
+.medium-left {
+  float: left;
+  height: 80%;
+  width: 50%;
+  margin-left: 5%;
+}
+
+.medium-right {
+  float: right;
+  height: 80%;
+  width: 50%;
+  margin-right: 5%;
+}
+
+.large-left {
+  float: left;
+  height: 80%;
+  width: 65%;
+  margin-left: 5%;
+}
+
+.large-right {
+  float: right;
+  height: 80%;
+  width: 65%;
+  margin-right: 5%;
+}
+
+.top {
+  height: 10%;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
+  padding-bottom: 5%;
+  float: none;
+}
+
+.bottom {
+  height: 35%;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  float: bottom;
+}
+
+.full {
+  height: 70vh;
+  width: 90vw;
+  margin-top: -4vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.slide {
+  height: 10vh;
+  width: 100%;
+  text-align: center;
+}
+
+.full-slide {
+  height: 10vh;
+  width: 100%;
+  text-align: center;
+  margin-top: 9vh;
+}
+
+.slide a {
+  text-decoration: none;
+  color: white;
+}
+
+.full-slide a {
+  text-decoration: none;
+  color: white;
+}
+
+/*media queries*/
+@media screen and (max-height: 1700px) {
+  h1 {
+    font-size: 80px;
+  }
+
+  h4 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-height: 1081px) {
+  #intro {
+    margin-top: -74vh;
+  }
+
+  h4 {
+    margin-right: 450px;
+  }
+}
+
+@media screen and (max-height: 768px) {
+  #intro {
+    margin-top: -73vh;
+  }
+
+  h1 {
+    font-size: 75px;
+  }
+
+  h4 {
+    font-size: 27.5px;
+    margin-right: 450px;
+    margin-bottom: -6.75vh;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  b {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-aspect-ratio: 1/1) {
+  h4 {
+    display: none;
+  }
+}
