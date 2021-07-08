@@ -26,7 +26,7 @@
   <!--homepage-->
   <iframe src="morning.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
   
-  <div id="intro-bg">
+  <div id="introbg">
     <video autoplay muted loop id="vbg">
       <source src="Background-1.mp4" type="video/mp4">
     </video>
@@ -45,11 +45,11 @@
   </div>
   
   <!--exhibit-entrance-->
-  <div class="content" id="begin">
-    Welcome to the Virtual Galleria: Wander the voluptuous halls of the Galleria, learn culture, lose yourself, sit by the
+  <div class="single-exhibit" id="begin">
+    <p class="solo">Welcome to the Virtual Galleria: Wander the voluptuous halls of the Galleria, learn culture, lose yourself, sit by the
     fountain. Deep in the mists of time and amidst the atria of the mall lies your first real love. We chose to exist between
     soft lighting of the food court, the warm glow of the anchor stores, the storied areas hidden away. Service corridors
-    and electrical cabinets. Can you hear the rain? Times are changing, but here time is not. Join us and relax.
+    and electrical cabinets. Can you hear the rain? Times are changing, but here time is not. Join us and relax.</p>
   </div>
   
   <div class="slide"><a href="#immaculate-conception"><b>Exhibits &dArr;</b></a></div>
@@ -61,15 +61,17 @@
   
   <!--exhibits-->
   <!--exhibit-1-->
-  <div class ="centerpiece" id="immaculate conception"></div>
+  <div class ="single-exhibit" id="immaculate conception"></div>
     
     <h2>The Veneration of Christ on the Cross</h2>
-      
+     
+     <div class="centerpiece"> 
       <x3d showStat='false' showLog='false'>
         <scene>
           <inline url="BirthofChristTest.x3d"></inline>
         </scene>
       </x3d>
+    </div>
     
     <div class="full-slide"><a href="#remember"><b>Continue &dArr;</b></a></div>
   </div>
