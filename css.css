@@ -7,7 +7,7 @@
   font-style: normal;
 }
 
-/*animations*/
+/*The Virtual Galleria sign at the exhibit entrance is animated in CSS*/
 @keyframes fadein {
   from {
     opacity: 0;
@@ -126,16 +126,22 @@
   }
 }
 
+/*Open-sans doesn't support katakana, hiragana, or kanji*/
 .japanese {
   font-family: 'Noto Sans JP', sans-serif;
 }
 
+/*Content width can be edited in queries and margins will update automatically*/
 :root {
+--content-width: 90vw;
+--margin-total: calc(100vw - var(--content-width));
+--margin-calc: calc(var(--margin-total) / 2);
+--content-margin: 0 var(--margin-calc) 0 var(--margin-calc);
 background: #640064;
-overflow-x: hidden;
 font-family: 'Open Sans', sans-serif;
 color: white;
-scroll-behaviour: smooth;
+scroll-behavior: smooth;
+transition: all 500ms ease-in-out 0ms;
 font-size: 16px;
 }
 
@@ -144,39 +150,50 @@ margin: 0;
 padding: 0;
 }
 
-body, #intro, .slide, .spacer, .single-exhibit, .leftright {
+#content, #intro, .text-stack, .slide, .spacer, .single-exhibit, .leftright {
 display: flex;
 flex-direction: column;
 align-items: center;
-justify-items: center;
+justify-content: center;
 }
 
-#introbg {
-display: fixed;
+#vbg {
+width: 100vw;
+height: 100vh;
+object-fit: fill;
+filter: brightness(0.5);
+}
+
+#intro {
+position: absolute;
 top: 0;
 width: 100vw;
 height: 100vh;
 }
 
-#vbg {
-height: 100vh;
-}
-
-#intro {
-
-height: 90vh;
+.text-stack {
+height: 85vh;
+margin-top: -18vh;
 }
 
 h1 {
+margin-top: -1rem;
+font-family: 'streamster';
 color: #e558f4;
-font-size: 2.25rem;
+font-size: 12vw;
 text-shadow: 0px 0px 5px #E69EEE;
 user-select: none;
 animation: letter-flicker 3s linear infinite;
 }
 
 h2 {
-font-size: 1.75rem;
+text-align: center;
+text-shadow: 3px 3px 5px black;
+}
+
+h4 {
+margin-left: -8rem;
+font-size: 4.5vw;
 text-shadow: 3px 3px 5px black;
 text-align: center;
 }
@@ -184,10 +201,12 @@ text-align: center;
 
 .slide {
 height: 10vh;
+font-size: 4.5vw;
 }
 
 .slide a {
 text-decoration: none;
+text-shadow: 3px 3px 5px black;
 color: white;
 }
 
@@ -200,36 +219,32 @@ width: 54.9vw;
 border-right: 1px solid white;
 }
 
-.solo {
-text-align: center;
+.text {
+padding: var(--content-margin);
 }
 
-.single-exhbit{
-height: 100vh;
-}
-
-.centerpiece {
-width: 90vw;
+.single-exhibit{
+width: 100vw;
 }
 
 .leftright {
-flex-flow: row nowrap;
-height: 70vh
 }
 
 .medium {
 display: flex;
-max-width: 50vw;
-padding: 5vw;
-}
-
-.indent {
-text-indent: 2rem;
+overflow-x: hidden;
+flex-flow: column;
 }
 
 .small {
+display: flex;
+flex-flow: column;
 max-width: 30vw;
 padding: 3vw;
+}
+
+#begin, #immaculate-conception {
+height: 85vh;
 }
 
 

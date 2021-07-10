@@ -10,7 +10,7 @@
   <link href="https://x3dom.org/download/1.7.2/x3dom.css" rel="stylesheet">
   <link href="css.css" rel="stylesheet">
   <script src="https://x3dom.org/download/1.7.2/x3dom.js"></script>
-
+  <meta name="viewport" content="initial-scale=1.0, width=device-width">
 </head>
 
 
@@ -26,18 +26,17 @@
   <!--homepage-->
   <iframe src="morning.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
   
-  <div id="introbg">
     <video autoplay muted loop id="vbg">
       <source src="Background-1.mp4" type="video/mp4">
     </video>
-  </div>
   
   <div id="intro">
-    <h4>Welcome to the</h4>
-    <h1>Virtual Galleria</h1>
+    <div class="text-stack">
+      <h4>Welcome to the</h4>
+      <h1>Virtual Galleria</h1>
+    </div>
+    <div class="slide"><a href="#begin"><b>Begin &dArr;</b></a></div>
   </div>
-  
-  <div id="intro-slide"><a href="#begin"><b>Begin &dArr;</b></a></div>
   
   <!--space-0-->
   <div class="spacer">
@@ -46,10 +45,10 @@
   
   <!--exhibit-entrance-->
   <div class="single-exhibit" id="begin">
-    <p class="solo">Welcome to the Virtual Galleria: Wander the voluptuous halls of the Galleria, learn culture, lose yourself, sit by the
-    fountain. Deep in the mists of time and amidst the atria of the mall lies your first real love. We chose to exist between
-    soft lighting of the food court, the warm glow of the anchor stores, the storied areas hidden away. Service corridors
-    and electrical cabinets. Can you hear the rain? Times are changing, but here time is not. Join us and relax.</p>
+    <p class="text">Welcome to the Virtual Galleria<br><br>Wander our voluptuous halls, learn your culture, lose yourself. Sit by the
+    fountain. Find love.<br><br>Enveloped in the mists of time, deep in our nest of atria, basking in the glow of luxury and technology is the real you.<br><br>
+    We chose to exist between live in food court, sleep in the anchor stores, loiter in areas long since hidden away.<br><br>
+    Covered by incandescence you hear the rain pour. Bathe with us. Spare your soul.</p>
   </div>
   
   <div class="slide"><a href="#immaculate-conception"><b>Exhibits &dArr;</b></a></div>
@@ -61,19 +60,17 @@
   
   <!--exhibits-->
   <!--exhibit-1-->
-  <div class ="single-exhibit" id="immaculate conception"></div>
+  <div class ="single-exhibit" id="immaculate-conception">
     
     <h2>The Veneration of Christ on the Cross</h2>
-     
-     <div class="centerpiece"> 
+      
       <x3d showStat='false' showLog='false'>
         <scene>
           <inline url="BirthofChristTest.x3d"></inline>
         </scene>
       </x3d>
-    </div>
     
-    <div class="full-slide"><a href="#remember"><b>Continue &dArr;</b></a></div>
+    <div class="slide"><a href="#remember"><b>Continue &dArr;</b></a></div>
   </div>
   
   <!--space-2-->
@@ -82,21 +79,20 @@
   </div>
   
   <!--exhibit-2-->
-  <div class="single-exhibit" id="#remember">
+  <div class="single-exhibit" id="remember">
     <h2>Artefacts of the Elders</h2>
   
     <div class="leftright">
     <div class="medium">
-        <p class="indent">We have scoured the halls of the past and gathered the largest collection of sources on the neon bliss of the past. We have found great marble gods, and astonishing atriums and waterworks. Every step we took brought up
-          deeper into the haze of their places. Every step secluded our minds in the warmth and comforts of their world. We can't come back.</p>
-        <p> It all started in an abandoned mall. </p>
-        <p>The god stared at us and we back at it. Tears rolled down our cheeks. We sat on the walls of the fountain and sang. As we sang, the great being begun to move. It spread its arms and took us in its embrace. Warm there it whispered:</p>
-        <p>"I will take you away to <b>happiness</b> and <b>nostalgia</b>"
-        <p>We have assorted all of the prettiest things we've found; this is our collection. Beautifully curated, we hope it brings you <b>happiness</b> and <b>nostalgia</b>.</p>
+        <p class="text">We have scoured the halls of the past and gathered the largest collection of sources on the neon bliss of the past. We have found great marble gods, and astonishing atriums and waterworks. Every step we took brought up
+          deeper into the haze of their places. Every step secluded our minds in the warmth and comforts of their world. We can't come back.<br><br>
+          It all started in an abandoned mall. <br><br>
+          The god stared at us and we back at it. Tears rolled down our cheeks. We sat on the walls of the fountain and sang. As we sang, the great being begun to move. It spread its arms and took us in its embrace. Warm there it whispered:<br><br>
+          We have assorted all of the prettiest things we've found; this is our collection. Beautifully curated, we hope it brings you <b>happiness</b> and <b>nostalgia</b>.</p>
       </div>
-      <iframe class="small-right" src="https://www.youtube.com/embed/FZUfiW3W1KY" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <div class="slide"><a href="#birth"><b> Venture deeper into the halls &dArr;</b></a></div>
+      <iframe class="small" src="https://www.youtube.com/embed/FZUfiW3W1KY" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
+    <div class="slide"><a href="#birth"><b> Venture deeper into the halls &dArr;</b></a></div>
   
   <!--space-3-->
   <div class="spacer">
@@ -118,9 +114,9 @@
       </div>
 
       <div class="medium">
-        <p class="indent">Computer life first emerged in the 1980s. Computer worlds have enabled us to achieve happiness and style by communicating instantly over space. Enjoy the digital world. Express yourself. Internet technologies give you your
-          own space. Experience personhood. Now with video technology. See the world through the bit perfect lens.</p>
-        <p>It's safe here, enjoy your online space with friends and family. There's so much to explore and discover. Sandy beaches, blue skies, bright pixels. Eat sleep and dream computer. Digital digital digital. Digital opulence awaits.
+        <p class="text">Computer life first emerged in the 1980s. Computer worlds have enabled us to achieve happiness and style by communicating instantly over space. Enjoy the digital world. Express yourself. Internet technologies give you your
+          own space. Experience personhood. Now with video technology. See the world through the bit perfect lens.<br><br>
+          It's safe here, enjoy your online space with friends and family. There's so much to explore and discover. Sandy beaches, blue skies, bright pixels. Eat sleep and dream computer. Digital digital digital. Digital opulence awaits.
           Experience the intimacy of computation. Create a special place for your friends. Be popular. Be the person with the digital life. Tune into a higher realm. Night.</p>
       </div>
       
@@ -152,21 +148,20 @@
         </div>
 
       <div class="medium">
-        <div class="japanese" lang="ja">バーチャルギャレリアへようこそ：ガレリアの魅惑的なホールをさまよい、文化を学び、自分を失い、そ
+        <div class="japanese" lang="ja"><p class="text">バーチャルギャレリアへようこそ：ガレリアの魅惑的なホールをさまよい、文化を学び、自分を失い、そ
                  噴水。 時間の霧の奥深くで、モールの心房の中にあなたの最初の本当の愛があります。 間に存在することを選択した
                  フードコートの柔らかな照明、アンカー店の暖かい輝き、隠された物語のある場所。 サービス回廊
-                 そして電気キャビネット。 雨が聞こえますか。 時は変わりつつありますが、ここでは変わりません。 私たちと一緒にリラックスしてください。<br>
+                 そして電気キャビネット。 雨が聞こえますか。 時は変わりつつありますが、ここでは変わりません。 私たちと一緒にリラックスしてください。<br>こは安全ーを食べる。 デジタルデジタルデジタル。 デジタル贅沢が待っています。 計算の親密さを体験してください。 友達のために特別な場所を作りましょう。 人気があります。 デジタルライフを持つ人になりましょう。 より高い領域に調整します。 夜。 夜が待っています。
+            バイブ ブログ。<br><br>
+        Technical information:<br><br>
 
-                   <p class="japanese">ここは安全ーを食べる。 デジタルデジタルデジタル。 デジタル贅沢が待っています。 計算の親密さを体験してください。 友達のために特別な場所を作りましょう。 人気があります。 デジタルライフを持つ人になりましょう。 より高い領域に調整します。 夜。 夜が待っています。
-            バイブ ブログ。</p><br>
-        <p>Technical information:</p>
-
-        <p>*** STOP: 0x000000FE (0x00000008, 0x000000006, 0x00000009, 0x847075cc)</p>
+        *** STOP: 0x000000FE (0x00000008, 0x000000006, 0x00000009, 0x847075cc)</p>
 
       </div>
     </div>
-    <div class="slide"><a href="#:(" ERROR &dArr;</b></a></div>
   </div>
+  <div class="slide"><a href="#:("> ERROR &dArr;</b></a></div>
+
   
   <!--space-5-->
   <div class="spacer">
@@ -188,7 +183,7 @@
       </div>
 
       <div class="medium">
-        <p class="indent">
+        <p class="text">
           C̟͚̱͙͈͍̙͚̠͢o̯̝͖̳͖̝͉̭m͏̛̯͡ṕ͓̼͠u̷̮̠͚̭̰͎̣͉̜̕͟t̡̜̝̱̲̩e̴̲̤̹̮͕͍ͅr̪̖̼̣ͅ ҉̸̻̱̙͠l͈̬i̸̱͈̘͓͎̦͢ͅf̢̱̼̫e̯͕ͅ ̧̧̗̬̪̻̮͇f͇̖̦͠í̧̛̫̝̮̥͇r̰̦̳͙͕̯̭̩s̤͜͜͞t̨̹͔͎̗̯̺ ̧͓͓̕͞e͖̼̤͖͓̠̥m̨͖̺e͖̣̖͍̺͎̗͟r̶̖͔̮̰̹̱̩g̫̘͉͓̟͉̹̙͠e͉̕͜͞ḑ͚̲͚̤̻̭̠͜͟ͅ ̶͙̥͔͇͉i҉̡̥̻̳n̫͙͟
           ̝̦̯͠t̶͙̀ͅh҉̧͙̙͍͕e̻̟̘̝̼̮̭ ̜̠̹̦̗̕͟1̶͇̕9͙͚̱͘8̯̤͎̝̞̻͓͖̀0̶̢͚̖̜ͅs̤͜.̷̡͓̝͈̫̥͟ ̴͔͚̘͜͝C̸̛͕̦͙͍̺̳͝o̡̫̖̬̝̫͚ͅm̡̭̭̼͉͇p̶̡̛͈̮̟̲̭͉͔͙u̴҉̙̞t̹̲̯̱̬̝͎̦e̵̴͔͡ͅŕ͙͔ ̸̹͖w̷̩̱ò̰̪̘͇͔͓̩̫ŗ͏̹͓̼͕͎͓ḷ̶͍̩͙̤̬̠̀͜d̶̮ṣ̻͎̱͇̭̯͙ ̸҉̧̭͙͇̖̥̪̤h̻͍̜͇̙͠͞ͅͅa̵̵̹̞̲̫̻̘v̧̼̖e̶̼̪͖̜̠
           ̧̹̙͕̟̱͜e̷͈̕ǹ͈̺̙͕͇͓͓͓͖a̷̲̭͙͖̱͍̜̬̹b̳̰̖͖̙͞l͏͔̲̝͇̙͓̳͜è͙̥͖͚̀́ͅd͈̩͇͓̟͜ ̪͙̖̜̖͕̼̰͝ṷ̺͎̟̬̫͝s̠̭̗̰͙̻͠ ̡̼̹͚̼͍͈͜t̗̬̖͘͘o҉̖̭̥͇͎̺̪͎͟ ̬͕̘̫̙̱̱̹a̡͎̼̦̳͎͇͢͜c͔̺ͅh͏̬̗̖̜̪̞̯į̖̠̘̼̖̻̘̬̀́e̸̤̤v̶̥͔̠e̹̪
@@ -200,10 +195,10 @@
           ̸̛̳̝ͅ ̸͈̕ ̪͇̪̲͈̼̜̖̼ ̷͉͖̫̮̝ ̡̨̬̗͜ ͞҉̹̗ ̵͖̦̝̪͕̪̯́ͅ ̶̠ ̭̟̩͘͘ ̶̙̭͇͇̩͘̕ ̧̫̫̺͜͠ͅo̟̤̼̜̮͘͠͡w̧̩͚͚̠̘̞͍̬ń̸̬̱̝̬͖̖̩͢ ̦̦͔̬͕́ś̶͇̱͎͞p̸̩̮̯͇̞a͚͉͟͢͝ç̰̱͇̣̜͓e͍̼̕͡.̝̫̪̪̕͢ ͕́ͅE̶̙͔̯͕̳̭x̸͕̠̙͚͍͟͝p̱͕̯͙̳̱̀e̢̮͈ŕ҉͇̼̠̘͈í̵̦͕̜͓e҉̼͎͚̥̬̼͓̯̞n͏̭̪̦̞̙̥̦̠c̶͍̠͚̼͚͞e̳̘̭͘
           ̜͕p̫̼̭͉̭̙͖e̲̬̳̳̟r̼s͚͚͚̰̘̟͉̦͡o̗̪̹̮̖̠̜n̸̬͈̗h͇̙ͅo̢̱̼͕͙̘͔͔͉o͎̝̰̮̹͉̪̭̟͜ḓ̻̙̬̫̯͉͜͝ͅ.̢̘̥̮̠ ̶̴̛̪̻͉N̷̟̥̮̗̜̱͘͡o̱̙̖͇̭͈̻̱͟ẁ҉̱̱͔͢ ̡̗͎̲w̢͉̬i͚̣̤̥̖̼t̯͉͓̝̀h̡̰̟̣̱̮̘̕ͅ ̶̝̖̪̕͜ͅv̰̝̩̞̤̼̜̠i̧͈͕͎͍̣d̖̘̝͔̼̲̘̘͝è̡̫͓o̹̳̪͢ͅͅ
           ̳͚̩̱ṭ̬̝͓̤̗̱͖è̸̹͔̞̩̞͡ć̠͉̥̫̱̀h̭̥́n̵̤̲̜̯̺̥̞͖͡o͏̹̩̫̻ͅḷ̰͔͈͍̳o̴̺̕g̵̩͔͖̣̣͍̣͚͔̀y̵̤̱̭.̸̛͖̩͍̺ ͓͙̮͖̗̪͙͎͟S͚͓̫͍̥͜͟ḙ̘͇͕͎͘͟e҉̗͓͕̥̭͕͢ ̶̧̭̭̦͈́t̯͓͙̩̩̫̥ẖ̙̣̜͈͓̗̜͞eͅ ̺̰͔̯̯͍̬̦̀w̛̛͎͉̤͙̩͚̕ͅo̘͓̪̝͙r̮̲̮͔͈̯͖̜̘ĺ̛̖̞̗̜̼ͅd҉̲
-          ̷̩͕͟t̗̖̱̺͟ͅḩ̣̩̯̬͖͘ͅr҉̯̭͎̩̤͙̙̹͜͢o͚̜̥̠̺̦͙͞ư͍̙̼͕̘̱ģ̗̖h͍̬̼͖͈̖͍͇ ̯͇͓̰͓t̝̦̜͙̫̮͚h̵̳̮̤̜̫ę̕͏͕̙͙͈ ̶͏̧̫̭̹ḇ̸͍͟i̪̖̳̺̺̕͡ṭ̱̯̟̘̺̰͓̜ </p>
-        <p>͎̜͇̲̙̖̯̻̩̻I̛͙̜̦̲͖̪̮̗t̪̣͝'͙͚̬̣̞̫̙̫̀͜͡s̸̨̗̻̖̙͎͕ ̢̦͜͞s̩͇͚̗̬̠̯à̶̷̯̮̼̗̻̩͍f̸̻̮͚̱̦͍͔̮́͡e͟͠͏̮̦͈͈̳̻̠ ̛̮̺͇̪͈̮h̢͔̟͚͖̱͉̥̦e̦̤̥͡r̜̖̣͈̱̜̕͟͡e̷͉̫̩,̫͈̰ </p>
-        <p>G̵̩͇̺͕̼̳O̻͙̥͜D̴̠̻ ̶̱͉S̗A̵̼Y̞S͇̞.̗̯̥͖̫.̻.̵̪̙̱</p>
-        <p>
+          ̷̩͕͟t̗̖̱̺͟ͅḩ̣̩̯̬͖͘ͅr҉̯̭͎̩̤͙̙̹͜͢o͚̜̥̠̺̦͙͞ư͍̙̼͕̘̱ģ̗̖h͍̬̼͖͈̖͍͇ ̯͇͓̰͓t̝̦̜͙̫̮͚h̵̳̮̤̜̫ę̕͏͕̙͙͈ ̶͏̧̫̭̹ḇ̸͍͟i̪̖̳̺̺̕͡ṭ̱̯̟̘̺̰͓̜ 
+        <br>͎̜͇̲̙̖̯̻̩̻I̛͙̜̦̲͖̪̮̗t̪̣͝'͙͚̬̣̞̫̙̫̀͜͡s̸̨̗̻̖̙͎͕ ̢̦͜͞s̩͇͚̗̬̠̯à̶̷̯̮̼̗̻̩͍f̸̻̮͚̱̦͍͔̮́͡e͟͠͏̮̦͈͈̳̻̠ ̛̮̺͇̪͈̮h̢͔̟͚͖̱͉̥̦e̦̤̥͡r̜̖̣͈̱̜̕͟͡e̷͉̫̩,̫͈̰ 
+        <br>G̵̩͇̺͕̼̳O̻͙̥͜D̴̠̻ ̶̱͉S̗A̵̼Y̞S͇̞.̗̯̥͖̫.̻.̵̪̙̱
+        <br>
           ̺͚̠
           ̮̤̙̟̤͙͘͢ͅC̴͔O̶͎̺͖M̻P̣͙̘͖I͏̖̞̘̼ͅL̪͍͚͉͕̗ͅA̬̮̠T̬͙I҉̬̱̥̦͉O̻̮̦N͓͢ ̝͇̜ͅI̦̞M̺̙͔̲ͅP̭͢Ȩ̫͚̼̥͇̜R̖̦̤͎̯I̦̱͎̝ͅO̮̪͍̹̱U͚̦̜̞̤̠͓S̠͍͉͍͉͔N̤͍̰͘Ḙ͎̻̹̥͎SS͖̹͚̼͞ ̠͉̱L̹̠͕̱̭̭̦͜Ạ̶̦M͉͈̤̲A̱̩̭̹̦̘͉I̙̟̱T̩͉̫̥͕̥̗R̭̰̟̝͢E͎ ͝P͔̠̯͕Ì̜̳̻N̟N̲̝A̝͝C̟͖̬̖͎̳͘L͍̻͎͈E̙̬͡'S̠̯̗͕̬̗͈
           ͔̕U̪͚̙̯̯̝͈N͉̤̫̰̳͜B̫̱Ļ̝̥̠̙̰̠͇O̷̺̼͇̙̠̺͍Ç̪̗̠K̡͍͈͉̣̮͉͎S̩ ̫̮͙͝U͙̟͢N͖͎͔̱͞P̞̯̭̱͕̳I̡͇̖͚̠̖͍CK ͉̙͘S͚̬͉͚͖͓CO͕̤̙̮͙͘F̘̦̦͞F͍̳̭͠ ̮͓̤̞C̣A̦P̪̱͕̖̺̙U̳L̡̤͇̥̱E̷̖̥͓ͅṬ̙̗̜͙̀'͍͘Ş LU̶͔̲B̬Ṟ͓͎̩̳̺͓I̗̻͍C̗̖̼̱̲AŢ̞̩̹̘ͅI̫͉͍̳ON̞̺͙͕̯ͅ ͖͔͓̣̘G̺̖̭͡AL̠̘͝L̵͍̝E͢O̴̘͎ͅN̳͈̳
@@ -217,8 +212,8 @@
           ͎̞̩̮̪ͅG͈̼͉R̸͉̜Ṵ̗̜̤̗̠͙D͈̟͇͉͉̳̲G̟̙͚̙̯̖̦͞Ẹ̲D͠ ̶̰͙P̮̟̹E̮͙͓̪͉͡N̬̺͡D͔̲͈̞I̡͓̜N͍̺̺̦G̗̙̙̞͕͘ ̝͉̟̹̯C͡O͢R̻̟T̯͚̜̭͈E̟̭̗͉͖̦S͡ ҉̠͔͓̬̪Ṕ̤͖R͕̻IE̲̞͙̞͚S̞͍͚T̺̞̝̹͓Ḥ̵̳̭̱̗̠O͙̫̳̠͇͠O̲̰D̦̟̜̱̻̭̞'̪̱̖̙̫̗̀S̷̟̹͈ J͖̗̣̙A͚̱͎R͏̺V̵͈͚̜͓̦̳͇I̦̠͉̦̣̲͙͜S̸̰͉̤͙̺̱͉'҉̼̲̪̺S̰͓̼͇̹
           ̻͇͖͍M̮̺̹͡Í͓̲̠X̧̭̱̻T̘͠U̱̼̘R̨̟͇È̠̗̬̱̖̫̮ ̶̥͎AL̨̹S͕̘̣͇̹T̺̠͎̲́ͅO̧̼͚̝̙Ṋ ̜̫̺͔E͙̹̜̟̮̕N̖̮̩̥V̩͕̮̪̀Ì̙͉̩͓O̫̙̲̱U̜̯̙͍̤͉̹Ś̰̣͔͚Ǹ̜͉͕E̶̼̘̗̠͕S̞̮͉̰̮̩̩S͖̫͓̲͙ ̝̦͈̝͢R̜̦͞ƠS̀Ȩ̻͚͎ͅͅC̰̳̻̳̞̼R҉̲̬̯̥̙̖A̩͕̖̲ͅͅN͞'̸̟͇̝ͅS͙̞͍͢ ͕͚̦̟͍Ḑ̰̝̺E̗S̨̱̭̯̟̫̘E̲̘̩R̵̝̠͈̫Ṭ̳͓̟
           ͞B̴͎A̶̗̬̳D͙̭̤̙̣̜͝L͕̣̩̯A̟Ņ̖̘͙̲̭D'̦̮̰S̩͘ ̩͢A͖̬̲͔̼͔̝I̷M̨̙L̲̦͕̥͉͔͎E͇̤̠̖̬͍̳S̖̹̘̙̘͘S̞̻̥͙̙͙ͅṆE̤̼̝̳̙̩̗SS̡̪̘͇͇̣'̶͍̺̗͎̤͓̲S҉̖̣̗̪͉͙͉ ͔̺̙̪BU͕̱̖͖̟ͅM̨̝̪̝B̻̰̩̩͔̜͇L̵̩̖̘̱ER̘̪̣̪̼</p̨҉͎̹̮ͅ>̦̩ͅ
-          <p><br>oh̢ d͘èa̴r҉ ̢go̶d̢ i̸t͟'s̡ s̕o</p>
-          <p> *** STOP: 0x000000FE (0x00000008, 0x000000006, 0x00000009, 0x847075cc)
+          <br>oh̢ d͘èa̴r҉ ̢go̶d̢ i̸t͟'s̡ s̕o
+          <br> *** STOP: 0x000000FE (0x00000008, 0x000000006, 0x00000009, 0x847075cc)
             ERROR: Null Pointer Exception</p>
       </div>
     </div>
@@ -234,10 +229,8 @@
 
     <h2>ComputerNull</h2>
 
-    <div class="single-container">
-
       <div class="small">  
-        <x3d class="small" showStat='false' showLog='false'>
+        <x3d showStat='false' showLog='false'>
           <scene>
             <inline url="ComputerNull.x3d" id="preload"></inline>
           </scene>
@@ -245,24 +238,17 @@
       </div>
 
       <div class="medium">
-        <p class="indent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id nunc suscipit, suscipit orci quis, vulputate mauris. Aenean scelerisque, ligula quis cursus vestibulum, eros purus venenatis nunc, non imperdiet turpis
-          orci
-          id
-          odio. Duis fringilla porta felis accumsan volutpat. Pellentesque ullamcorper pulvinar urna. Proin cursus nunc ut blandit placerat. In hac habitasse platea dictumst. Morbi viverra posuere hendrerit. Donec nec felis condimentum odio
-          tincidunt
-          lacinia.</p>
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id nunc suscipit, suscipit orci quis, vulputate mauris. Aenean scelerisque, ligula quis cursus vestibulum, eros purus venenatis nunc, non imperdiet turpis
+          orci id odio. Duis fringilla porta felis accumsan volutpat. Pellentesque ullamcorper pulvinar urna. Proin cursus nunc ut blandit placerat. In hac habitasse platea dictumst. Morbi viverra posuere hendrerit. Donec nec felis condimentum odio
+          tincidunt lacinia.<br><br>
 
-        <p>Suspendisse ac nisl quis ex ornare vehicula quis quis neque. Aliquam pretium pharetra justo, at tincidunt arcu pharetra id. Mauris id ex venenatis, imperdiet magna non, dapibus sapien. Vestibulum posuere, nulla sit amet lobortis
-          laoreet,
-          eros tellus auctor libero, a dapibus risus tellus sed sapien. Quisque scelerisque erat nisi, non pretium erat ornare eget. Cras magna nunc, commodo at fringilla non, iaculis sed erat. Lorem ipsum dolor sit amet, consectetur adipiscing
-          elit.
-          Aliquam efficitur et nisi sed dignissim.</p>
+          Suspendisse ac nisl quis ex ornare vehicula quis quis neque. Aliquam pretium pharetra justo, at tincidunt arcu pharetra id. Mauris id ex venenatis, imperdiet magna non, dapibus sapien. Vestibulum posuere, nulla sit amet lobortis
+          laoreet, eros tellus auctor libero, a dapibus risus tellus sed sapien. Quisque scelerisque erat nisi, non pretium erat ornare eget. Cras magna nunc, commodo at fringilla non, iaculis sed erat. Lorem ipsum dolor sit amet, consectetur adipiscing
+          elit. Aliquam efficitur et nisi sed dignissim.<br><br>
 
-        <p>Sed semper iaculis ipsum eu porttitor. Ut sed sagittis mi, ac iaculis lectus. Maecenas sapien augue, sodales vitae aliquet ac, tempor at risus. Ut sagittis lobortis diam, eu molestie purus egestas a. Etiam aliquet tellus eget dui
-          molestie,
-          non egestas purus molestie. Vivamus a urna dapibus, pulvinar lectus sit amet, mattis lorem. Etiam rutrum volutpat eleifend. Praesent hendrerit feugiat magna sit amet viverra. Ut eleifend tempus ipsum, ut venenatis neque consequat ac.
-          Donec
-          eu massa sed erat rhoncus lacinia non vitae lacus. Proin sed laoreet mi. Morbi ac dolor quis nisi molestie placerat ut ac velit. Integer erat nisl, tincidunt a pulvinar eu, tempus non ipsum. Phasellus nec aliquet dolor.</p>
+          Sed semper iaculis ipsum eu porttitor. Ut sed sagittis mi, ac iaculis lectus. Maecenas sapien augue, sodales vitae aliquet ac, tempor at risus. Ut sagittis lobortis diam, eu molestie purus egestas a. Etiam aliquet tellus eget dui
+          molestie, non egestas purus molestie. Vivamus a urna dapibus, pulvinar lectus sit amet, mattis lorem. Etiam rutrum volutpat eleifend. Praesent hendrerit feugiat magna sit amet viverra. Ut eleifend tempus ipsum, ut venenatis neque consequat ac.
+          Donec eu massa sed erat rhoncus lacinia non vitae lacus. Proin sed laoreet mi. Morbi ac dolor quis nisi molestie placerat ut ac velit. Integer erat nisl, tincidunt a pulvinar eu, tempus non ipsum. Phasellus nec aliquet dolor.</p>
       </div>
       
     </div>
